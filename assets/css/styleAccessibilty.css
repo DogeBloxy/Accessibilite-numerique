@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+}
+
+.title-hero,
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+}
+
+h2,
+h3 {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #fff;
+    width: 30%;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 2em;
+    color: #e10098;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    height: 70px;
+    color: #fff;
+    background-color: rgba(51, 5, 141, 0.7);
+    z-index: 999;
+}
+
+a {
+    color: #e10098;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffbf00;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+}
+
+
+nav {
+    width: 70%;
+    display: flex;
+    justify-content: end;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul li a {
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #e10098;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffbf00;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+section.accessibility-page {
+    max-width: 800px;
+    margin: 100px auto 50px auto;
+    padding: 0 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section.accessibility-page h1 {
+    color: #33058d;
+    font-size: 2.5rem;
+    width: 100%;
+}
+
+section.accessibility-page p,
+section.accessibility-page ul {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+section.accessibility-page ul {
+    list-style: disc inside;
+}
+
+section.accessibility-page a {
+    color: #e10098;
+    text-decoration: none;
+}
+
+section.accessibility-page a:hover {
+    text-decoration: underline;
+}
+
+section.accessibility-page em {
+    font-style: italic;
+    color: #666;
+}
+
+footer {
+    color: #fff;
+    background-color: #33058d;
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 25px;
+}
+
+.footer-left,
+.footer-right {
+    width: 35%;
+}
+
+footer small {
+    margin-top: 20px;
+}
+
+
+.form-group {
+    width: 45%;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.form-full-width {
+    width: 100%;
+}
+
+.form-control input,
+.form-control textarea {
+    padding: 10px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.form-control textarea {
+    height: 100%;
+}
+
+form#contact-form button {
+    background: #e10098;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form#contact-form button:hover {
+    background: #ffbf00;
+}
+
+@media screen and (max-width: 768px) {
+    section.accessibility-page {
+        margin: 120px 10px 50px 10px;
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.75em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header {
+        padding: 0 15px;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer ul li {
+        margin-bottom: 10px;
+    }
+
+    footer small {
+        margin-top: 10px;
+    }
+}

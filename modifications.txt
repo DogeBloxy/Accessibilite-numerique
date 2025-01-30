@@ -1,0 +1,12 @@
+Ajout de focus-visible : Meilleure accessibilité pour la navigation clavier.
+Ajout d'un outline sur les liens et boutons : Meilleure navigation clavier.
+Correction de la hiérarchie des polices : Remplacement de serif incorrect par sans-serif.
+Association correcte des labels aux champs de formulaire avec for et id.
+Ajout d'attributs alt aux images.
+Ajout d'un aria-hidden="true" sur les icônes purement décoratives.
+Ajout d'aria-label.
+Utilisation de fieldset et legend dans les formulaires pour une meilleure structure.
+Ajout d'effet hover sur les boutons ainsi que pour les checkbox des filtres.
+Amélioration du responsive avec menu burger...
+Modification de la structure des articles.
+Ajout de la page Accessibilité avec son propre fichier css.

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Accessibilité | Tech'n'Tips by La Manu</title>
+    <link rel="stylesheet" href="./assets/css/styleAccessibilty.css">
+</head>
+
+<body id="accessibilite">
+    <header>
+        <h1>Tech'n'Tips by La Manu</h1>
+        <button id="menu-toggle" aria-label="Ouvrir le menu"><i class="fas fa-bars"></i></button>
+        <nav role="navigation" aria-label="Menu Principal">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="accessibility-page">
+            <h1>Déclaration d'accessibilité</h1>
+            <p>
+                Chez <strong>Tech'n'Tips by La Manu</strong>, nous nous engageons à rendre notre site accessible à tous,
+                quelles que soient les technologies ou les aptitudes.
+            </p>
+
+            <h2>Conformité aux normes</h2>
+            <p>
+                Notre site a été conçu en respectant les directives du <a
+                    href="https://accessibilite.numerique.gouv.fr/methode/criteres/">RGAA 4.1</a> et vise la conformité
+                avec le niveau AA des <a href="https://www.w3.org/Translations/WCAG21-fr/">WCAG 2.1</a>.
+            </p>
+
+            <h2>Fonctionnalités d'accessibilité</h2>
+            <ul>
+                <li>Navigation au clavier optimisée sur l'ensemble du site.</li>
+                <li>Alternatives textuelles pour toutes les images significatives.</li>
+                <li>Utilisation de contrastes de couleurs conformes aux normes.</li>
+                <li>Structure sémantique du contenu pour une meilleure compréhension.</li>
+                <li>Utilisation des attributs ARIA pour améliorer l'expérience utilisateur.</li>
+            </ul>
+
+            <h2>Améliorations continues</h2>
+            <p>
+                Malgré tous nos efforts, il se peut que certaines pages ne soient pas encore entièrement accessibles.
+                Nous sommes engagés à améliorer continuellement l'accessibilité de notre site.
+            </p>
+
+            <h2>Vos retours sont importants</h2>
+            <p>
+                Si vous rencontrez des difficultés lors de la navigation sur notre site, n'hésitez pas à nous le faire
+                savoir. Vos retours nous aideront à améliorer l'accessibilité pour tous.
+            </p>
+
+            <h3>Contact</h3>
+            <p>
+                Vous pouvez nous contacter par :
+            </p>
+            <ul>
+                <li>Email : <a href="mailto:contact@technntips-lamanu.fr">contact@technntips-lamanu.fr</a></li>
+                <li>Téléphone : 01 23 45 67 89</li>
+                <li>Formulaire de contact : <a href="#contact">Cliquez ici</a></li>
+            </ul>
+
+            <p>
+                <em>Cette déclaration a été mise à jour le 30 janvier 2025.</em>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content" id="contact">
+            <div class="footer-left">
+                <img src="./assets/img/logo-la-manu.png" alt="Logo La Manu" />
+                <h3>Menu :</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="accessibilite.html">Accessibilité</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Contact :</h3>
+                <form action="" id="contact-form" aria-label="Contact">
+                    <fieldset>
+                        <legend>Formulaire de contact</legend>
+
+                        <div class="form-group">
+                            <div class="form-control">
+                                <label for="email">Email :</label>
+                                <input type="email" id="email" placeholder="Votre Email" />
+                            </div>
+                            <div class="form-control">
+                                <label for="object">Objet :</label>
+                                <input type="text" id="object" placeholder="Votre objet" />
+                            </div>
+                        </div>
+                        <div class="form-group form-control">
+                            <label for="message">Message :</label>
+                            <textarea id="message" placeholder="Message ..."></textarea>
+                        </div>
+                        <div class="form-full-width">
+                            <input type="radio" id="conditions" required />
+                            <label for="conditions">J'accepte les conditions d'utilisation</label>
+                        </div>
+                        <button type="submit" class="pink-btn">Envoyer</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <small>Copyright - La Manu 2024</small>
+    </footer>
+</body>
+
+</html>
